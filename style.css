@@ -1,0 +1,93 @@
+.itemh { grid-area: header; }
+.item1 { grid-area: one; }
+.item2 { grid-area: two; }
+.item3 { grid-area: three; }
+.item4 { grid-area: four; }
+.item5 { grid-area: five; }
+.item6 { grid-area: six; }
+.item7 { grid-area: seven; }
+.item8 { grid-area: eight; }
+.item9 { grid-area: nine; }
+.item10 { grid-area: ten; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'one one one one one one'
+    'two two two two two two'
+    'three three three three three three'
+    'four four four four four four'
+    'five five five five five five'
+    'six six six six six six'
+    'seven seven seven seven seven seven'
+    'eight eight eight eight eight eight'
+    'nine nine nine nine nine nine'
+    'ten ten ten ten ten ten';
+  background-color: #BC2024;
+  padding: 3%;
+  padding-left: 9%;
+  padding-right: 9%;
+  font-family: Sans-serif;
+}
+.grid-container > div {
+  background-color: #BC2024;
+  border-top: 1.7px solid black;
+}
+
+.flex-container {
+  display: flex;
+  align-items: flex-end;
+  background-color: #BC2024;
+}
+
+.flex-container > div {
+  background-color: #BC2024;
+  margin:1.6%;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+body {background-color: #BC2024;}
+
+@media only screen and (max-width: 400px) {
+    body{font-size: 4px;}
+    .large-title{font-size:26px;}
+    .names{font-size: 9px;}
+}
+@media only screen and (min-width: 400px) {
+    body{font-size: 5px;}
+    .large-title{font-size:33px;}
+    .names{font-size: 12px;}
+} 
+@media only screen and (min-width: 480px) {
+    body{font-size: 8px;}
+    .large-title{font-size:50px;}
+    .names{font-size: 18px;}
+} 
+@media only screen and (min-width: 600px) {
+    body{font-size: 10px;}
+    .large-title{font-size:64px;}
+    .names{font-size: 23px;}
+}
+
+@media only screen and (min-width: 768px) {
+    body{font-size: 13px;}
+    .large-title{font-size:83px;}
+    .names{font-size: 26px;}
+} 
+
+@media only screen and (min-width: 992px) {
+    body{font-size: 16px;}
+    .large-title{font-size:100px;}
+    .names{font-size: 36px;}
+} 
+
+@media only screen and (min-width: 1200px) {
+    body{font-size: 24px;}
+    .large-title{font-size:150px;}
+    .names{font-size: 54px;}
+}
+
